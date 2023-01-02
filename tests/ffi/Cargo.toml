@@ -1,15 +1,3 @@
-[package]
-name = "cxx-test-suite"
-version = "0.0.0"
-edition = "2018"
-publish = false
-
-[lib]
-path = "lib.rs"
-
-[dependencies]
-cxx = { path = "../.." }
-
-[build-dependencies]
-cxx-build = { path = "../../gen/build" }
-cxxbridge-flags = { path = "../../flags" }
+version https://git-lfs.github.com/spec/v1
+oid sha256:8619dcdb963011b8cd7a5b032813d231ffeecf577b3727592abf2dd3ae77f1a3
+size 255

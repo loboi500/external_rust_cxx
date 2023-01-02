@@ -1,10 +1,3 @@
-fn main() {
-    cxx_build::bridge("src/main.rs")
-        .file("src/blobstore.cc")
-        .flag_if_supported("-std=c++14")
-        .compile("cxxbridge-demo");
-
-    println!("cargo:rerun-if-changed=src/main.rs");
-    println!("cargo:rerun-if-changed=src/blobstore.cc");
-    println!("cargo:rerun-if-changed=include/blobstore.h");
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:39fef8575b8d1ddf14c697cad427d867136171341daaec699e830370a4d5657e
+size 332

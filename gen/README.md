@@ -1,7 +1,3 @@
-This directory contains CXX's C++ code generator. This code generator has two
-public frontends, one a command-line application (binary) in the *cmd* directory
-and the other a library intended to be used from a build.rs in the *build*
-directory.
-
-There's also a 'lib' frontend which is intended to allow higher level code
-generators to embed cxx. This is not yet recommended for general use.
+version https://git-lfs.github.com/spec/v1
+oid sha256:32fe8c0f892101982a63b1b9e1c920d0993e88d5228fe16ace0045c7df8093ef
+size 391

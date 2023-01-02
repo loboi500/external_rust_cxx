@@ -1,33 +1,3 @@
-load("//tools/buck:rust_cxx_bridge.bzl", "rust_cxx_bridge")
-
-rust_binary(
-    name = "demo",
-    srcs = glob(["src/**/*.rs"]),
-    deps = [
-        ":blobstore-sys",
-        ":bridge",
-        "//:cxx",
-    ],
-)
-
-rust_cxx_bridge(
-    name = "bridge",
-    src = "src/main.rs",
-    deps = [":blobstore-include"],
-)
-
-cxx_library(
-    name = "blobstore-sys",
-    srcs = ["src/blobstore.cc"],
-    compiler_flags = ["-std=c++14"],
-    deps = [
-        ":blobstore-include",
-        ":bridge/include",
-    ],
-)
-
-cxx_library(
-    name = "blobstore-include",
-    exported_headers = ["include/blobstore.h"],
-    deps = ["//:core"],
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:a560087c7583e4219e51b36f41fb70d9518d767934f12d11cb644999c3227b13
+size 624
